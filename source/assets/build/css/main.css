@@ -1,4 +1,39 @@
 body {
+	display: flex;
+	justify-content: center;
+	line-height: 23px;
+	font-size: 98%;
+}
+
+* {
+	transition: all 0.1s ease-out;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-weight: initial;
+}
+
+h1 {
+	line-height: 30px;
+	font-size: 28px;
+}
+
+small {
+	line-height: 20px;
+}
+
+img{
+	max-width: 100%;
+}
+body {
     background-color: #191919;
     color: rgb(203, 204, 198);
 }
@@ -9,7 +44,6 @@ h1 {
 
 #page {
     max-width: 375px;
-    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr;
@@ -26,7 +60,8 @@ h1 {
 
 
 #hero img {
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     height: 30px;
     /* margin-right: 10px; */
     filter: invert(0.9);
@@ -49,3 +84,4 @@ h1 {
     margin-left: 10px;
     margin-right: 10px;
 }
+

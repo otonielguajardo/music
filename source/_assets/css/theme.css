@@ -1,0 +1,50 @@
+body {
+    background-color: #191919;
+    color: rgb(203, 204, 198);
+}
+
+h1 {
+    font-weight: 100;
+}
+
+#page {
+    max-width: 375px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    margin-bottom: 40px;
+    gap: 15px;
+    padding: 15px;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#hero img {
+    object-fit: contain;
+    height: 30px;
+    /* margin-right: 10px; */
+    filter: invert(0.9);
+}
+
+#albums .album img{
+    border-radius: 5px;
+}
+
+#albums .album ul{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#albums .album ul img{
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
