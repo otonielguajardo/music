@@ -8,7 +8,6 @@
         <title>{{ $page->title }}</title>
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
-        <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
 
         @yield('head')
     </head>
