@@ -48,3 +48,8 @@ h1 {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.disabled {
+    filter: grayscale(100%);
+    opacity: 0.4;
+}

@@ -16,9 +16,13 @@
           <ul>
             @foreach ($album->links as $link)
               <li>
-                <a href="{{ $link['url'] }}" target="_blank" title="{{ $link['name'] }}">
-                  <img src="{{ url($link['icon']) }}" alt="{{ $link['name'] }}">
-                </a>
+                @if ($link['active']) 
+                    <a href="{{ $link['url'] }}" target="_blank" title="{{ $link['name'] }}">
+                        <img src="{{ url($link['icon']) }}" alt="{{ $link['name'] }}">
+                    </a>
+                @else
+                    <img class="disabled" src="{{ url($link['icon']) }}" alt="{{ $link['name'] }}">
+                @endif
               </li>
             @endforeach
           </ul>
